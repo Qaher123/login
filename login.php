@@ -28,11 +28,15 @@ $type =  gettype($result);
 if (!empty($result)) {
     echo "<br> Login as $user_name <br>";
     // todo 5: let uit wat de ingebouwde php functie print_r() doet en gebruik het om de result-variabele te printen.
+    //print_r — Prints human-readable information about a variable :D
     print_r($result);
 } else {
     echo "<br> Invalid login! <br>";
 }
 
+// dit gebeurt er als ik bij username ' OR '1'='1 in typ:
+//Login as ' OR '1'='1
+//Array ( [0] => Array ( [id] => 1 [0] => 1 [username] => qaher [1] => qaher [pswd] => test [2] => test ) )
 
-
+//De ' OR '1'='1 is een techniek wat hackers gebruiken wat het is altijd truee het is een SQL injection.
 ?>
